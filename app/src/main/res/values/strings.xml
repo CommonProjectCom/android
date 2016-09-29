@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">E-City</string>
+    <string name="app_name">E_City_v2</string>
+
+    <string name="title_activity_fullscreen_activity_kvashchuk">FullscreenActivityKvashchuk</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
