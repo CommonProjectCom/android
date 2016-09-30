@@ -10,41 +10,35 @@
     tools:context="kvashchuk.java.com.e_city_v2.MainWindow">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Игра: Города Украины"
-        android:id="@+id/gamename"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="30dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В Города Украины"
+            android:id="@+id/gamename"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="72dp" android:textAlignment="center"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Game"
-        android:id="@+id/newGame"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/gamename"
-        android:layout_marginTop="20dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Game"
+            android:id="@+id/newGame"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_below="@+id/idNEW" android:layout_alignRight="@+id/gamename" android:textSize="48dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Developers:"
         android:id="@+id/developers"
-        android:layout_below="@+id/newGame"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="30dp"
-        />
+        android:layout_above="@+id/kvashchuk" android:layout_centerHorizontal="true"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-----"
         android:id="@+id/kvashchuk"
-        android:layout_below="@+id/developers"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="1dp" />
+        android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"

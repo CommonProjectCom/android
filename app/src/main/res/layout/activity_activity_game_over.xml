@@ -11,33 +11,30 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="GAME OVER"
-        android:id="@+id/gameOver"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-         />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="GAME OVER"
+            android:id="@+id/gameOver"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" android:textAlignment="center" android:textSize="72dp"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New game"
-        android:id="@+id/newGame"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/gameOver"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New game"
+            android:id="@+id/newGame"
+            android:textSize="32dp"
+            android:layout_above="@+id/exit" android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"/>
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exit"
-        android:id="@+id/exit"
-        android:layout_below="@id/gameOver"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="20dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:id="@+id/exit"
+            android:textSize="32dp"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/gameOver"/>
 </RelativeLayout>
