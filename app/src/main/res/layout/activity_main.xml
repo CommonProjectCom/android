@@ -1,64 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="kvashchuk.java.com.e_city.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/displayMessage"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/enterCity"
-        android:layout_below="@+id/displayMessage"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".activity.MainActivity">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To make move"
-        android:id="@+id/toMakeMove"
-        android:layout_below="@+id/enterCity"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Game"
-        android:id="@+id/newGame"
-        android:layout_alignTop="@+id/toMakeMove"
-        android:layout_toRightOf="@+id/toMakeMove"
-        android:layout_toEndOf="@+id/toMakeMove"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp" />
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новая Игра"
+            android:id="@+id/btnNewGame"
+            android:layout_centerVertical="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" style="@android:style/DeviceDefault.ButtonBar"
+            android:textSize="32dp" android:textStyle="bold"/>
+    <Button style="@android:style/DeviceDefault.ButtonBar" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Выход" android:id="@+id/btnExit"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" android:textSize="32dp" android:textStyle="bold"
+            android:singleLine="false"
+            android:layout_above="@+id/tvLog" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <Button style="@android:style/DeviceDefault.ButtonBar" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Продолжить" android:id="@+id/btnResume"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" android:textSize="32dp" android:textStyle="bold"
+            android:layout_above="@+id/btnNewGame" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_alignRight="@+id/btnNewGame"
+            android:layout_alignEnd="@+id/btnNewGame" android:visibility="invisible"/>
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:id="@+id/gameID"
-        android:layout_below="@+id/newGame"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="147dp"
-        android:layout_toRightOf="@+id/newGame"
-        android:layout_toEndOf="@+id/newGame" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Log"
+            android:id="@+id/tvLog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
 </RelativeLayout>

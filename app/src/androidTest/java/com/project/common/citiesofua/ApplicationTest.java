@@ -1,4 +1,4 @@
-package kvashchuk.java.com.e_city;
+package com.project.common.citiesofua;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
